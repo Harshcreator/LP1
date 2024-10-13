@@ -1,6 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 public class RoundRobin { // Preemptive - intrrupted
     public static void main(String[] args) {

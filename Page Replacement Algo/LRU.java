@@ -1,7 +1,4 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class LRU {
     public static void main(String[] args) {
@@ -60,3 +57,33 @@ public class LRU {
         sc.close();
     }
 }
+
+/*
+Enter number of pages: 8
+Enter the pages:
+7
+0
+1
+3
+2
+0 
+1
+0
+Enter the frame size: 3
+
+----------------------------------------------------------------------
+7       Fault   [7, -1, -1]
+0       Fault   [7, 0, -1]
+1       Fault   [7, 0, 1]
+3       Fault   [3, 0, 1]
+2       Fault   [3, 2, 1]
+0       Fault   [3, 2, 0]
+1       Fault   [3, 2, 1]
+0       Hit     [3, 2, 1]
+
+----------------------------------------------------------------------
+Page Fault: 7
+Page Hit: 1
+Hit Ratio: 12.5
+Fault Ratio: 87.5
+ */

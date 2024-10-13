@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class FIFO {
     public static void main(String[] args) {
@@ -53,3 +52,31 @@ public class FIFO {
         sc.close();
     }
 }
+
+/* 
+Enter number of pages: 7
+Enter the pages:
+1
+3
+0
+3
+5
+6
+3
+Enter the frame size: 3
+
+----------------------------------------------------------------------
+1   Fault   [1, -1, -1]
+3   Fault   [1, 3, -1]
+0   Fault   [1, 3, 0]
+3   Hit     [1, 3, 0]
+5   Fault   [5, 3, 0]
+6   Fault   [5, 6, 0]
+3   Fault   [5, 6, 3]
+
+----------------------------------------------------------------------
+Page Fault: 5
+Page Hit: 1
+Hit Ratio: 14.285714285714285
+Fault Ratio: 71.42857142857143
+*/
