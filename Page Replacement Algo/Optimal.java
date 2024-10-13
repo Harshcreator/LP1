@@ -94,3 +94,35 @@ public class Optimal {
         sc.close();
     }
 }
+
+/*
+Enter number of pages: 9
+Enter the pages:
+7
+0
+1
+2
+0
+3
+0
+4
+2
+Enter the frame size: 3
+
+----------------------------------------------------------------------
+7       Fault   [7, -1, -1]
+0       Fault   [7, 0, -1]
+1       Fault   [7, 0, 1]
+2       Fault   [2, 0, 1]
+0       Hit     [2, 0, 1]
+3       Fault   [2, 0, 3]
+0       Hit     [2, 0, 3]
+4       Fault   [2, 4, 3]
+2       Hit     [2, 4, 3]
+
+----------------------------------------------------------------------
+Page Fault: 6
+Page Hit: 3
+Hit Ratio: 33.33333333333333
+Fault Ratio: 66.66666666666666
+ */
